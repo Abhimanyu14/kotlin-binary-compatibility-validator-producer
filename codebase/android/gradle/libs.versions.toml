@@ -1,0 +1,48 @@
+[versions]
+# App versions
+app-version-code = "1"
+app-version-name = "1.0.0-SNAPSHOT1"
+producer-version-code = "1"
+producer-version-name = "1.0.0-SNAPSHOT1"
+
+# SDK versions
+compile-sdk = "36"
+jvm = "17"
+min-sdk = "26"
+ndk = "27.0.12077973"
+target-sdk = "36"
+
+# Library versions
+androidx-activity-compose = "1.10.1"
+androidx-compose-bom = "2025.08.00"
+androidx-compose-foundation = "1.9.0"
+androidx-compose-runtime = "1.9.0"
+androidx-core-ktx = "1.17.0"
+kotlin-binary-compatibility-validator-producer  = "1.0.0-SNAPSHOT"
+
+# Plugin versions
+plugin-android-gradle = "8.13.0-alpha04"
+plugin-kotlin = "2.2.10"
+plugin-kotlinx-binary-compatibility-validator = "0.18.1"
+plugin-ksp = "2.1.21-2.0.2"
+plugin-maven-publish = "0.31.0"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity-compose" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "androidx-compose-bom" }
+androidx-compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "androidx-compose-foundation" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
+androidx-compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "androidx-compose-runtime" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-core-ktx" }
+kotlin-binary-compatibility-validator-producer = { module = "io.github.Abhimanyu14:kotlin-binary-compatibility-validator-producer", version.ref = "kotlin-binary-compatibility-validator-producer" }
+
+[plugins]
+plugin-android-application = { id = "com.android.application", version.ref = "plugin-android-gradle" }
+plugin-android-library = { id = "com.android.library", version.ref = "plugin-android-gradle" }
+plugin-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "plugin-kotlin" }
+plugin-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "plugin-kotlin" }
+plugin-kotlinx-binary-compatibility-validator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref = "plugin-kotlinx-binary-compatibility-validator" }
+plugin-ksp = { id = "com.google.devtools.ksp", version.ref = "plugin-ksp" }
+plugin-maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "plugin-maven-publish" }
